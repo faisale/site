@@ -1,0 +1,194 @@
+html {
+	overflow-y: scroll;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	background-image: url(../images/bg.png);
+	background-repeat: repeat;
+	background-attachment: fixed;
+	font-family: sans-serif;
+	margin: 0;
+}
+
+.nav {
+	background-color: white;
+	border-bottom-color: darkgray;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	width: 100%;
+}
+
+.nav p {
+	display: inline;
+	font-size: 28px;
+	line-height: 52px;
+	margin: 0;
+	right: 2%;
+	position: absolute;
+}
+
+.nav ul {
+	display: inline;
+	margin: 0;
+	list-style: none;
+}
+
+.nav li {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 50px;
+	padding: 0px 20px;
+}
+
+.nav a {
+	color: black;
+	display: inline-block;
+	text-decoration: none;
+	transition: .3s color;
+}
+
+.nav a:hover {
+	color: rgb(8,157,227);
+}
+	
+.footer {
+    bottom: 0;
+    padding-bottom: 1%;
+    position: fixed;
+	text-align: center;
+    width: 100%;
+}
+
+.header h1 {
+	font-size: 26px;
+	margin: 0;
+	padding: 200px 100px;
+	text-align: center;
+}
+
+.profile {
+	animation: 0.7s fade-in;
+	padding: 150px 15%;
+}
+
+.profile img {
+	float: right;
+}
+
+.img-circle {
+	border-radius: 50%;
+	max-width: 300px;
+	max-height: 300px;
+	margin-left: 75px;
+}
+
+#legend {
+	color: rgba(0,0,0,0.5);
+	font-size: 11px;
+	float: right;
+	margin-top: 51px;
+	padding: 10px;
+	position: fixed;
+	width: 170px;
+}
+
+#legend span {
+	color: black;
+	font-weight: 600;
+}
+
+.experience-blue {
+	background-color: rgb(8,157,227);
+	display: block;
+	height: 450px;
+	padding: 40px 15%;
+}
+
+.experience-blue h1 {
+	color: powderblue;
+	font-size: 26px;
+}
+
+.experience-blue p {
+	color: white;
+	font-weight: 600;
+	padding-bottom: 25px;
+}
+
+.experience-blue a {
+	color: powderblue;
+	text-decoration: none;
+	transition: .3s color;
+}
+
+.experience-blue a:hover {
+	color: white;
+}
+
+.experience-skills {
+	table-layout: fixed;
+	margin-top: 75px;
+	text-align: center;
+	width: 100%;
+}
+
+.experience-skills th {
+	color: powderblue;
+	font-size: 26px;
+}
+
+.experience-skills td {
+	color: white;
+	font-weight: 600;
+	line-height: 40px;
+	vertical-align: top;	
+}
+
+.experience-work {
+	padding: 40px 15% 0px;
+}
+
+.experience-work h1 {
+	color: black;
+	line-height: 10px;
+}
+
+.experience-work h2 {
+	color: rgb(8,157,227);
+	font-size: 20px;
+	line-height: 10px;
+}
+
+.experience-work h3 {
+	color: darkgray;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 10px;
+}
+
+.experience-work p {
+	padding-top: 15px;
+	padding-bottom: 75px;
+}
+
+.experience-work img {
+	display: block;
+	margin: auto;
+	max-height: 150px;
+	max-width: 300px;
+}
+
+/*@import url(//fonts.googleapis.com/css?family=Roboto:400,500,700);*/
+
+@keyframes fade-in {
+	from {padding: 175px 15%; opacity: 0;}
+	to {padding: 150px 15%; opacity: 1;}
+}
