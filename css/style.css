@@ -186,6 +186,34 @@ body {
 	max-width: 300px;
 }
 
+.experience-coursework {
+	background-color: rgb(8,157,227);
+	display: block;
+	height: 700px;
+	margin-top: 45px;
+	padding: 40px 15%;
+}
+
+.experience-coursework h1 {
+	color: powderblue;
+	font-size: 26px;
+}
+
+.experience-coursework p {
+	color: white;
+	padding-bottom: 25px;
+}
+
+.experience-coursework a {
+	color: powderblue;
+	text-decoration: none;
+	transition: .3s color;
+}
+
+.experience-coursework a:hover {
+	color: white;
+}
+
 /*@import url(//fonts.googleapis.com/css?family=Roboto:400,500,700);*/
 
 @keyframes fade-in {
