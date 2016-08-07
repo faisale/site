@@ -39,7 +39,7 @@ var EXPERIENCE = (function () {
 	var jobs = {
 		"j1" : {
 			"company" : "Northbridge Financial",
-			"position" : "Claims Process Analyst",
+			"position" : "Business Analyst",
 			"date" : "MAY 2016 &ndash; PRESENT",
 			"location" : "TORONTO, ON",
 			"description" : "Analyzing large datasets to discover insights and draw conclusions for financial reports. Data mining and wrangling in Excel and VBA for ad hoc requests. Developing numerous VBA scripts to increase workplace productivity."},
