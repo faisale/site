@@ -1,14 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+@keyframes fade-in {
+	from {padding: 175px 15%; opacity: 0;}
+	to {padding: 150px 15%; opacity: 1;}
+}
+
 html {
 	overflow-y: scroll;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
-	-webkit-font-smoothing: antialiased;
 }
 
 body {
 	background-image: url(../images/bg.png);
 	background-repeat: repeat;
 	background-attachment: fixed;
-	font-family: sans-serif;
+	font-family: 'Roboto';
 	margin: 0;
 }
 
@@ -212,11 +217,4 @@ body {
 
 .experience-coursework a:hover {
 	color: white;
-}
-
-/*@import url(//fonts.googleapis.com/css?family=Roboto:400,500,700);*/
-
-@keyframes fade-in {
-	from {padding: 175px 15%; opacity: 0;}
-	to {padding: 150px 15%; opacity: 1;}
 }
