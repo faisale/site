@@ -1,31 +1,31 @@
 var NAVIGATION = (function () {
 	var nav = {
 			"home" : {
-				"name" : "HOME",
+				"name" : "home",
 				"link" : "index.html"},
 			"profile" : {
-				"name" : "PROFILE",
+				"name" : "profile",
 				"link" : "profile.html"},
 			"projects" : {
-				"name" : "PROJECTS",
+				"name" : "projects",
 				"link" : "projects.html"},
 			"experience" : {
-				"name" : "EXPERIENCE",
+				"name" : "experience",
 				"link" : "experience.html"}
 		},
 		contact = {
-			"mail" : {
-				"name" : "fa fa-envelope-square",
+			"email" : {
+				"name" : "fa fa-envelope",
 				"link" : "mailto:faelhuss@uwaterloo.ca"},
 			"github" : {
-				"name" : "fa fa-github-square",
+				"name" : "fa fa-github",
 			   	"link" : "https://github.com/faisale"},
 			"linkedin" : {
-				"name" : "fa fa-linkedin-square",
+				"name" : "fa fa-linkedin",
 			   	"link" : "https://ca.linkedin.com/in/faisale"}
 		},
 		HTMLnavBarItem = '<li><a href="%link%">%page%</a></li>',
-		HTMLcontactBarItem = '<a href="%link%" target="_blank"><span class="%icon%"/></a> ';
+		HTMLcontactBarItem = '<li><a href="%link%" target="_blank" class="%identity%"><span class="%icon%"/></a></li>';
 
 	function init () {
 		for (var section in nav)
@@ -38,8 +38,8 @@ var NAVIGATION = (function () {
 		for (var item in contact)
 		{
 			if (contact.hasOwnProperty(item)) {
-				var formattedcontactBarItem = HTMLcontactBarItem.replace("%link%", contact[item].link).replace("%icon%", contact[item].name);
-				$("#contactBar").append(formattedcontactBarItem);
+				var formattedContactBarItem = HTMLcontactBarItem.replace("%link%", contact[item].link).replace("%icon%", contact[item].name).replace("%identity%", item);
+				$("#contactBar").append(formattedContactBarItem);
 			}
 		}
 	}
