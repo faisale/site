@@ -14,53 +14,68 @@ body {
 	background-repeat: repeat;
 	background-attachment: fixed;
 	font-family: 'Roboto';
+	color: #222;
 	margin: 0;
 }
 
 .nav {
 	background-color: white;
-	border-bottom-color: darkgray;
-	border-bottom-style: solid;
-	border-bottom-width: 1px;
+	box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.25);
+	line-height: 50px;
 	margin: 0;
-	padding: 0;
 	position: fixed;
-	text-align: center;
-	top: 0;
 	width: 100%;
 }
 
-.nav p {
-	display: inline;
-	font-size: 28px;
-	line-height: 52px;
-	margin: 0;
-	right: 2%;
-	position: absolute;
-}
-
-.nav ul {
-	display: inline;
-	margin: 0;
-	list-style: none;
-}
-
-.nav li {
-	display: inline-block;
-	font-size: 14px;
-	font-weight: 600;
-	line-height: 50px;
-	padding: 0px 20px;
-}
-
 .nav a {
-	color: black;
-	display: inline-block;
+	color: grey;
 	text-decoration: none;
 	transition: .3s color;
 }
 
-.nav a:hover {
+#contactBar ul, #navBar ul {
+	display: inline;
+	list-style: none;
+}
+
+#contactBar {
+    margin: 0;
+    right: 2%;
+	padding: 0;
+    position: absolute;
+	text-align: right;
+}
+
+#contactBar li {
+	display: inline-block;
+	font-size: 20px;
+	padding: 0px 15px;
+}
+
+#contactBar a.email:hover {
+	color: rgb(250,175,58);
+}
+
+#contactBar a.github:hover {
+	color: #333;
+}
+
+#contactBar a.linkedin:hover {
+	color: rgb(0,119,181);
+}
+
+#navBar {
+	margin: 0;
+	text-align: center;
+}
+
+#navBar li {
+	display: inline-block;
+	font-size: 16px;
+	padding: 0px 25px;
+}
+
+#navBar a:hover {
 	color: rgb(8,157,227);
 }
 	
@@ -98,11 +113,9 @@ body {
 #legend {
 	color: rgba(0,0,0,0.5);
 	font-size: 11px;
-	float: right;
 	margin-top: 51px;
 	padding: 10px;
 	position: fixed;
-	width: 170px;
 }
 
 #legend span {
@@ -162,7 +175,6 @@ body {
 }
 
 .experience-work h1 {
-	color: black;
 	line-height: 10px;
 }
 
@@ -195,7 +207,6 @@ body {
 	background-color: rgb(8,157,227);
 	display: block;
 	height: 700px;
-	margin-top: 45px;
 	padding: 40px 15%;
 }
 
