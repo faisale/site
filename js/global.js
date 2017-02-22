@@ -2,16 +2,16 @@ var NAVIGATION = (function () {
 	var nav = {
 			"home" : {
 				"name" : "home",
-				"link" : "index.html"},
+				"link" : "index"},
 			"profile" : {
 				"name" : "profile",
-				"link" : "profile.html"},
+				"link" : "profile"},
 			"projects" : {
 				"name" : "projects",
-				"link" : "projects.html"},
+				"link" : "projects"},
 			"experience" : {
 				"name" : "experience",
-				"link" : "experience.html"}
+				"link" : "experience"}
 		},
 		contact = {
 			"email" : {
