@@ -1,8 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
 @keyframes fade-in {
-	from {padding: 175px 15%; opacity: 0;}
-	to {padding: 150px 15%; opacity: 1;}
+	0% {
+		opacity: 0;
+		}
+	50% {
+		opacity: 0;
+		}
+	100% {
+		opacity: 1;
+	}
 }
 
 html {
@@ -81,16 +88,25 @@ body {
 	
 .footer {
     bottom: 0;
+	font-size: 14px;
     padding-bottom: 1%;
     position: fixed;
 	text-align: center;
     width: 100%;
 }
 
-.header h1 {
-	font-size: 26px;
-	margin: 0;
-	padding: 200px 100px;
+.header {
+	animation: 2s fade-in;
+	font-size: 24px;
+	padding-top: 150px;
+	text-align: center;
+}
+
+.desc {
+	animation: 3s fade-in;
+	font-size: 14px;
+	max-width: 650px;
+	margin: auto;
 	text-align: center;
 }
 
