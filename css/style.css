@@ -59,16 +59,8 @@ body {
 	padding: 0px 15px;
 }
 
-#contactBar a.email:hover {
-	color: rgb(250,175,58);
-}
-
-#contactBar a.github:hover {
-	color: #333;
-}
-
-#contactBar a.linkedin:hover {
-	color: rgb(0,119,181);
+#contactBar a:hover {
+	color: rgb(8,157,227);
 }
 
 #navBar {
