@@ -3,9 +3,6 @@ var NAVIGATION = (function () {
 			"home" : {
 				"name" : "home",
 				"link" : "index"},
-			"profile" : {
-				"name" : "profile",
-				"link" : "profile"},
 			"projects" : {
 				"name" : "projects",
 				"link" : "projects"},
