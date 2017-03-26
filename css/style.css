@@ -102,22 +102,6 @@ body {
 	text-align: center;
 }
 
-.profile {
-	animation: 0.7s fade-in;
-	padding: 150px 15%;
-}
-
-.profile img {
-	float: right;
-}
-
-.img-circle {
-	border-radius: 50%;
-	max-width: 300px;
-	max-height: 300px;
-	margin-left: 75px;
-}
-
 #legend {
 	color: rgba(0,0,0,0.5);
 	font-size: 11px;
