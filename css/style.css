@@ -79,10 +79,10 @@ body {
 
 .footer {
     bottom: 0;
-	font-size: 14px;
+		font-size: 14px;
     padding-bottom: 1%;
     position: fixed;
-	text-align: center;
+		text-align: center;
     width: 100%;
 }
 
@@ -100,10 +100,60 @@ body {
 	margin: auto;
 }
 
+.projects {
+	margin: auto;
+	max-width: 920px;
+	position: relative;
+	padding-top: 45px;
+
+}
+
+.proj {
+	animation: 2s fade-in;
+	background-color: white;
+	box-shadow: 0px 0px 5px rgba(100, 100, 100, 0.5);
+	color: grey;
+	float: left;
+	margin: 5px;
+	height: 200px;
+	width: 450px;
+	position: relative;
+}
+
+.proj img {
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	margin: 20px;
+	position: absolute;
+}
+
+.proj h1 {
+	font-size: 22px;
+	margin: 30px 20px 0px 140px;
+	position: absolute;
+}
+
+.proj a {
+	color: #222;
+	text-decoration: none;
+	transition: .3s color;
+}
+
+.proj a:hover {
+	color: rgb(8,157,227)
+}
+
+.proj p {
+	font-size: 14px;
+	margin: 70px 20px 10px 140px;
+	position: absolute;
+}
+
 #legend {
 	color: rgba(0,0,0,0.5);
 	font-size: 11px;
-	margin-top: 51px;
+	margin-top: 0px;
 	padding: 10px;
 	position: fixed;
 }
@@ -116,7 +166,7 @@ body {
 .experience-blue {
 	background-color: rgb(8,157,227);
 	display: block;
-	height: 450px;
+	height: 350px;
 	padding: 40px 15%;
 }
 
@@ -162,6 +212,8 @@ body {
 
 .experience-work {
 	padding: 40px 15% 0px;
+	margin: auto;
+	max-width: 800px;
 }
 
 .experience-work h1 {
@@ -196,7 +248,7 @@ body {
 .experience-coursework {
 	background-color: rgb(8,157,227);*
 	display: block;
-	height: 700px;
+	height: 800px;
 	padding: 40px 15%;
 }
 

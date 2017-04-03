@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	$(window).scroll(function () {
-		if ($(this).scrollTop() > 1300) { 
+		if ($(this).scrollTop() > 1300) {
     		$('#legend').html('SKILLS<br/>WORK EXPERIENCE<br/><span>INDEPENDENT COURSEWORK</span>');
 		} else if ($(this).scrollTop() > 300) {
 			$('#legend').html('SKILLS<br/><span>WORK EXPERIENCE</span><br/>INDEPENDENT COURSEWORK');
@@ -38,24 +38,31 @@ var SKILLS = (function () {
 var EXPERIENCE = (function () {
 	var jobs = {
 		"j1" : {
+			"company" : "SAP Labs",
+			"position" : "Engineer/Data Scientist",
+			"date" : "JAN 2017 &ndash; APR 2017",
+			"location" : "PALO ALTO, CA",
+			"description" : "Experimented with deep learning models such as LSTM and RNN to power SAP’s Conversational AI Platform by using natural language processing concepts such as word embeddings, named entity recognition and sentence classification to improve platform performance. Worked in a Scrum environment and delivered the first prototype within three months. Benchmarked prototype against competitors and exceeded performance and accuracy."},
+
+		"j2" : {
 			"company" : "Northbridge Financial",
 			"position" : "Business Analyst",
-			"date" : "MAY 2016 &ndash; PRESENT",
+			"date" : "MAY 2016 &ndash; AUG 2016",
 			"location" : "TORONTO, ON",
-			"description" : "Analyzing large datasets to discover insights and draw conclusions for financial reports. Data mining and wrangling in Excel and VBA for ad hoc requests. Developing numerous VBA scripts to increase workplace productivity."},
-		"j2" : {
+			"description" : "Analyzed insurance data to track financial losses and identify the least profitable regions. Performed change impact analysis to calculate the effect on revenue due to regulation changes. Automated tasks in VBA to increase workplace productivity."},
+		"j3" : {
 			"company" : "Canada Post",
 			"position" : "Process Engineer",
 			"date" : "SEPT 2015 &ndash; DEC 2015",
 			"location" : "MISSISSAUGA, ON",
-			"description" : "Implemented a black belt Lean Six Sigma project to reduce the defect rates of incoming mail from all sources to 10%. Facilitated training on machine operations to several teams of employees. Executed daily ad hoc operational changes during high volume season to exceed the processing target of 35,000 PPH."},
-		"j3" : {
+			"description" : "Implemented a Lean Six Sigma project to reduce the defect rates of incoming mail from all sources by 57%. Executed ad hoc operational changes during high volume season to exceed the processing target of 35,000 parts per hour."},
+		"j4" : {
 			"company" : "Magna International",
 			"position" : "Manufacturing Engineer",
 			"date" : "JAN 2015 &ndash; APR 2015",
 			"location" : "MILTON, ON",
-			"description" : "Designed a material handler and collaborated with external vendors to deliver two prototypes to users. Conducted time studies to resolve production line bottlenecks. Assisted with mock simulations of developing lines to reduce cycle times by approximately 5%. Assessed corrective action reports and continuous improvement forms to maintain production quality."},
-		"j4" : {
+			"description" : "Designed a material handler and collaborated with external vendors to deliver two prototypes to users. Conducted time studies to resolve production line bottlenecks. Assisted with mock simulations of developing lines to reduce cycle times by approximately 6%. Assessed corrective action reports and continuous improvement forms to maintain production quality."},
+		"j5" : {
 			"company" : "University of Waterloo",
 			"position" : "Research Systems Analyst",
 			"date" : "MAY 2014 &ndash; AUG 2014",
@@ -85,7 +92,7 @@ var EXPERIENCE = (function () {
 
 	return {
 		init:init
-	};	
+	};
 })();
 
 var COURSEWORK = (function () {
@@ -93,7 +100,7 @@ var COURSEWORK = (function () {
 		"c1" : {
 			"name" : "Neural Networks and Deep Learning",
 			"link" : "http://neuralnetworksanddeeplearning.com",
-			"description" : "(Currently working through this one) A free online book that takes a detailed and practical approach for introducing artificial neural networks, using Python."
+			"description" : "A free online book that takes a detailed and practical approach for introducing artificial neural networks, using Python."
 		},
 		"c2" : {
 			"name" : "Intro to Data Science",
@@ -103,7 +110,7 @@ var COURSEWORK = (function () {
 		"c3" : {
 			"name" : "Machine Learning",
 			"link" : "https://www.udacity.com/course/machine-learning--ud262",
-			"description" : "(Currently working through this one) Introductory course to concepts in supervised, unsupervised and reinforcement learning."
+			"description" : "Introductory course to concepts in supervised, unsupervised and reinforcement learning."
 		},
 		"c4" : {
 			"name" : "Computational and Inferential Thinking",
@@ -113,7 +120,7 @@ var COURSEWORK = (function () {
 		"c5" : {
 			"name" : "Data Visualization and D3.js",
 			"link" : "https://www.udacity.com/course/data-visualization-and-d3js--ud507",
-			"description" : "(Currently working through this one) Principles of data visualization and how to communicate with data."
+			"description" : "Principles of data visualization and how to communicate with data."
 		},
 		"c6" : {
 			"name" : "Learning How to Learn",
@@ -137,7 +144,7 @@ var COURSEWORK = (function () {
 	}
 	return {
 		init: init
-	};	
+	};
 })();
 
 SKILLS.init();
