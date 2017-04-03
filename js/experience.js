@@ -11,9 +11,9 @@ $(document).ready(function () {
 });
 
 var SKILLS = (function () {
-	var languages = ['C#', 'CSS', 'HTML', 'JavaScript', 'Python', 'SQL', 'VBA'],
-		packages = ['jQuery', 'NumPy', 'Matplotlib', 'Pandas', 'SciPy', 'Scikit-learn'],
-		general = ['Algorithms and Data Structures', 'Data Mining', 'Data Wrangling', 'Databases', 'Machine Learning', 'Process Improvement (LSS)'];
+	var languages = ['Python', 'R', 'SQL', 'JavaScript', 'HTML', 'VBA', 'CSS', 'C#'],
+		packages = ['Pandas', 'NumPy', 'Scikit-learn', 'TensorFlow', 'NLTK', 'Matplotlib', 'Git', 'ggplot2', 'dplyr', 'jQuery'],
+		general = ['Machine Learning', 'Neural Nets', 'Natural Language Processing', 'Agile Development', 'Exploratory Data Analysis', 'Process Improvement (LSS)'];
 
 	function init () {
 		var fadeLanguages = '<span>' + languages.join('</span><br/><span>') + '</span>';
