@@ -13,7 +13,7 @@ var NAVIGATION = (function () {
 		contact = {
 			"email" : {
 				"name" : "fa fa-envelope",
-				"link" : "mailto:faelhuss@uwaterloo.ca"},
+				"link" : "mailto:faelhuss@edu.uwaterloo.ca"},
 			"github" : {
 				"name" : "fa fa-github",
 			   	"link" : "https://github.com/faisale"},
@@ -29,14 +29,14 @@ var NAVIGATION = (function () {
 		{
 			if (nav.hasOwnProperty(section)) {
 				var formattedNavBarItem = HTMLnavBarItem.replace("%link%", nav[section].link).replace("%page%", nav[section].name);
-				$("#navBar").append(formattedNavBarItem);
+				$(".nav").append(formattedNavBarItem);
 			}
 		}
 		for (var item in contact)
 		{
 			if (contact.hasOwnProperty(item)) {
 				var formattedContactBarItem = HTMLcontactBarItem.replace("%link%", contact[item].link).replace("%icon%", contact[item].name).replace("%identity%", item);
-				$("#contactBar").append(formattedContactBarItem);
+				$(".footer").append(formattedContactBarItem);
 			}
 		}
 	}

@@ -1,273 +1,414 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
 @keyframes fade-in {
-	0% {
-		opacity: 0;
-		}
-	50% {
-		opacity: 0;
-		}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+    }
+  50% {
+    opacity: 0;
+    }
+  100% {
+    opacity: 1;
+  }
 }
 
-html {
-	overflow-y: scroll;
-}
-
+/*GENERAL*/
 body {
-	background-image: url(../images/bg.png);
-	background-repeat: repeat;
-	background-attachment: fixed;
-	color: #222;
-	font-family: 'Roboto';
-	margin: 0;
+  background-image: url(../images/bg.png);
+  background-repeat: repeat;
+  /*background-color: hsla(203,96%,98%,1.0);
+  background-blend-mode: overlay;*/
+  background-size: 60%;
+  color: #222;
+  font-family: 'Roboto';
+  font-size: 14px;
+  margin: 0;
 }
 
-.nav {
-	background-color: white;
-	box-shadow: 0px 1px 5px rgba(100, 100, 100, 0.2);
-	line-height: 50px;
-	margin: 0;
-	width: 100%;
-}
-
-.nav a {
-	color: grey;
-	text-decoration: none;
-	transition: .3s color;
-}
-
-#contactBar ul, #navBar ul {
-	display: inline;
-	list-style: none;
-}
-
-#contactBar {
-    margin: 0;
-    right: 2%;
-	padding: 0;
-    position: absolute;
-	text-align: right;
-}
-
-#contactBar li {
-	display: inline-block;
-	font-size: 20px;
-	padding: 0px 15px;
-}
-
-#contactBar a:hover {
-	color: rgb(8,157,227);
-}
-
-#navBar {
-	margin: 0;
-	text-align: center;
-}
-
-#navBar li {
-	display: inline-block;
-	font-size: 16px;
-	padding: 0px 25px;
-}
-
-#navBar a:hover {
-	color: rgb(8,157,227);
+.content {
+  min-height: calc(100vh - 136px);
 }
 
 .footer {
-    bottom: 0;
-		font-size: 14px;
-    padding-bottom: 1%;
-    position: fixed;
-		text-align: center;
-    width: 100%;
+  border-top: 1px dashed lightgrey;
+  font-size: 16px;
+  height: 30px;
+  margin: auto;
+  margin-top: 100px;
+  max-width: 95%;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.footer a {
+  color: grey;
+  text-decoration: none;
+  transition: .3s color;
+}
+
+.footer a:hover {
+  color: rgb(8,157,227);
+}
+
+.footer li {
+  display: inline;
+  padding: 0px 15px;
+}
+
+/*NAVIGATION BAR*/
+.nav {
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+}
+
+.nav a {
+  color: grey;
+  text-decoration: none;
+  transition: .3s color;
+}
+
+.nav a:hover {
+  color: rgb(8,157,227);
+}
+
+/*.nav ul {
+  list-style: none;
+}*/
+
+.nav li {
+  display: inline-block;
+  font-size: 16px;
+  padding: 0px 25px;
+}
+
+/*INDEX*/
+.h {
+  width: 355px;
+  margin: auto;
+  padding-top: 65px;
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(8,157,227); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  width: 0px;
+  font-size: 48px;
+  font-weight: normal;
+  animation:
+    typing 1.3s 2.6s step-end forwards,
+    blink-caret 1.3s infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  0%    { width: 0px }
+  4%    { width: 17px }
+  10%   { width: 45px }
+  16%   { width: 56px }
+  22%   { width: 81px }
+  28%   { width: 109px }
+  34%   { width: 120px }
+  40%   { width: 131px }
+  46%   { width: 158px }
+  52%   { width: 170px }
+  58%   { width: 182px }
+  64%   { width: 209px }
+  70%   { width: 235px }
+  76%   { width: 259px }
+  82%   { width: 285px }
+  88%   { width: 312px }
+  94%   { width: 322px }
+  100%  { width: 355px }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(8,157,227); }
 }
 
 .header {
-	animation: 2s fade-in;
-	font-size: 24px;
-	padding-top: 100px;
-	text-align: center;
+  animation: 2s fade-in;
+  font-size: 24px;
+  padding-top: 65px;
+  text-align: center;
 }
 
 .desc {
-	animation: 3s fade-in;
-	font-size: 14px;
-	max-width: 650px;
-	margin: auto;
+  animation: 3s fade-in forwards;
+  animation-delay: 2.6s;
+  max-width: 650px;
+  margin: auto;
+  opacity: 0;
 }
 
+/*PROJECTS*/
 .projects {
-	margin: auto;
-	max-width: 920px;
-	position: relative;
-	padding-top: 45px;
-
+  min-height: 450px;
+  margin: auto;
+  max-width: 920px;
+  position: relative;
+  padding-top: 100px;
 }
 
 .proj {
-	animation: 2s fade-in;
-	background-color: white;
-	box-shadow: 0px 0px 5px rgba(100, 100, 100, 0.5);
-	color: grey;
-	float: left;
-	margin: 5px;
-	height: 200px;
-	width: 450px;
-	position: relative;
+  animation: 2s fade-in;
+  background-color: rgba(255,255,255,0.5);
+  box-shadow: 0px 0px 5px rgba(100, 100, 100, 0.5);
+  color: grey;
+  float: left;
+  margin: 5px;
+  height: 200px;
+  width: 450px;
+  position: relative;
 }
 
 .proj img {
-	border-radius: 50%;
-	height: 100px;
-	width: 100px;
-	margin: 20px;
-	position: absolute;
+  border-radius: 50%;
+  height: 100px;
+  margin: 20px;
+  position: absolute;
+  width: 100px;
 }
 
 .proj h1 {
-	font-size: 22px;
-	margin: 30px 20px 0px 140px;
-	position: absolute;
+  font-size: 22px;
+  margin: 30px 20px 0px 140px;
+  position: absolute;
 }
 
 .proj a {
-	color: #222;
-	text-decoration: none;
-	transition: .3s color;
+  color: #222;
+  text-decoration: none;
+  transition: .3s color;
 }
 
 .proj a:hover {
-	color: rgb(8,157,227)
+  color: rgb(8,157,227);
 }
 
 .proj p {
-	font-size: 14px;
-	margin: 70px 20px 10px 140px;
-	position: absolute;
+  font-size: 14px;
+  margin: 70px 20px 10px 140px;
+  position: absolute;
+  text-align: justify;
 }
 
-#legend {
-	color: rgba(0,0,0,0.5);
-	font-size: 11px;
-	margin-top: 0px;
-	padding: 10px;
-	position: fixed;
+/*EXPERIENCE*/
+.divider {
+  border-bottom: 10px dotted powderblue;
+  margin: auto;
+  width: 600px;
 }
 
-#legend span {
-	color: black;
-	font-weight: 600;
+.exp {
+  padding-top: 100px;
 }
 
-.experience-blue {
-	background-color: rgb(8,157,227);
-	display: block;
-	height: 500px;
-	padding: 5px 15%;
+.exp-skills {
+  margin: auto;
+  width: 700px;
+  position: relative;
 }
 
-.experience-blue h1 {
-	color: powderblue;
-	font-size: 26px;
+.exp-skills h1 {
+  font-size: 26px;
+  margin: 0 0 0 120px;
+  position: relative;
+
 }
 
-.experience-blue p {
-	color: white;
-	font-weight: 600;
-	padding-bottom: 25px;
+.exp-skills span {
+  font-size: 80px;
+  color: rgb(8,157,227);
+  position: absolute;
+  padding-top: 20px;
 }
 
-.experience-blue a {
-	color: powderblue;
-	text-decoration: none;
-	transition: .3s color;
+.exp-skills ul {
+  margin: 10px 0 75px 120px;
+  position: relative;
+  list-style: none;
+  padding: 0;
 }
 
-.experience-blue a:hover {
-	color: white;
+.exp-skills li {
+  background-color: rgb(240,240,250);
+  border-radius: 8px;
+  color: rgb(8,157,227);
+  display: inline-block;
+  font-family: 'Lucidia Console', monospace;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px;
+  margin: 0 5px 5px 0;
 }
 
-.experience-skills {
-	table-layout: fixed;
-	margin-top: 25px;
-	text-align: center;
-	width: 100%;
+.exp-work {
+  margin: auto;
+  width: 700px;
+  position: relative;
 }
 
-.experience-skills th {
-	color: powderblue;
-	font-size: 26px;
+.exp-work img {
+  width: 100px;
+  position: absolute;
 }
 
-.experience-skills td {
-	color: white;
-	font-weight: 600;
-	line-height: 40px;
-	vertical-align: top;
-}
+
 
 .experience-work {
-	padding: 40px 15% 0px;
-	margin: auto;
-	max-width: 800px;
+  padding: 40px 15% 0px;
+  margin: auto;
+  max-width: 700px;
 }
 
 .experience-work h1 {
-	line-height: 10px;
+  line-height: 10px;
 }
 
 .experience-work h2 {
-	color: rgb(8,157,227);
-	font-size: 20px;
-	line-height: 10px;
+  color: rgb(8,157,227);
+  font-size: 20px;
+  line-height: 10px;
 }
 
 .experience-work h3 {
-	color: darkgray;
-	font-size: 18px;
-	font-weight: 500;
-	line-height: 10px;
+  color: darkgray;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 10px;
 }
 
 .experience-work p {
-	padding-top: 15px;
-	padding-bottom: 75px;
+  padding-top: 15px;
+  padding-bottom: 75px;
+  text-align: justify;
 }
 
-.experience-work img {
-	display: block;
-	margin: auto;
-	max-height: 150px;
-	max-width: 300px;
+.experience-blue {
+  background-color: rgb(8,157,227);
+  display: block;
+  height: 500px;
+  padding: 5px 15%;
 }
+
+.experience-blue h1 {
+  color: powderblue;
+  font-size: 26px;
+}
+
+.experience-blue p {
+  color: white;
+  font-weight: 600;
+  padding-bottom: 25px;
+}
+
+.experience-blue a {
+  color: powderblue;
+  text-decoration: none;
+  transition: .3s color;
+}
+
+.experience-blue a:hover {
+  color: white;
+}
+
 
 .experience-coursework {
-	background-color: rgb(8,157,227);*
-	display: block;
-	height: 800px;
-	padding: 40px 15%;
+  background-color: rgb(8,157,227);
+  display: block;
+  height: 800px;
+  padding: 40px 15%;
 }
 
 .experience-coursework h1 {
-	color: powderblue;
-	font-size: 26px;
+  color: powderblue;
+  font-size: 26px;
 }
 
 .experience-coursework p {
-	color: white;
-	padding-bottom: 25px;
+  color: white;
+  padding-bottom: 25px;
 }
 
 .experience-coursework a {
-	color: powderblue;
-	text-decoration: none;
-	transition: .3s color;
+  color: powderblue;
+  text-decoration: none;
+  transition: .3s color;
 }
 
 .experience-coursework a:hover {
-	color: white;
+  color: white;
+}
+
+/*For projects with a screen width smaller 950px*/
+@media (max-width: 950px) {
+  .proj {
+    float: none;
+    margin: 10px auto;
+  }
+}
+
+/*For screens with a width smaller than 768px.*/
+@media (max-width: 768px) {
+  /*NAVIGATION BAR*/
+  .nav li {
+    font-size: 14px;
+    padding: 0px 20px;
+  }
+
+  /*INDEX*/
+  .header {
+    font-size: 16px;
+    padding-top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .desc {
+    font-size: 12px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  /*PROJECTS*/
+  .projects {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .proj {
+    float: none;
+    margin: 10px 0 0 0;
+    height: 170px;
+    width: 100%;
+    position: relative;
+  }
+
+  .proj img {
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    margin: 20px;
+    position: absolute;
+  }
+
+  .proj h1 {
+    font-size: 18px;
+    margin: 25px 5% 0px 120px;
+    position: absolute;
+  }
+
+  .proj p {
+    font-size: 12px;
+    margin: 55px 5% 10px 120px;
+    position: absolute;
+  }
 }
